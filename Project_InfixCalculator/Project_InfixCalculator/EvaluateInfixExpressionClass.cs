@@ -113,11 +113,12 @@ namespace Project_InfixCalculator
                     return a * b;
                     break;
                 case '/':
-                    if (b == 0)
-                    {
-                        MessageBox.Show("Can not divide by 0","Error syntax", MessageBoxButtons.OK);
-                    }
-                     return a / b;
+                        if (b == 0)
+                        {
+                            MessageBox.Show("Can not divide by 0", "Error syntax", MessageBoxButtons.OK);
+                        }
+                            return a / b;
+                    
             }
             return 0;
         }
