@@ -48,7 +48,7 @@
             this.Button_Div = new System.Windows.Forms.Button();
             this.Button_back = new System.Windows.Forms.Button();
             this.Button_clear = new System.Windows.Forms.Button();
-            this.Button_save = new System.Windows.Forms.Button();
+            this.Button_Memory = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TextBox
@@ -270,14 +270,15 @@
             this.Button_clear.UseVisualStyleBackColor = true;
             this.Button_clear.Click += new System.EventHandler(this.Button_clear_Click);
             // 
-            // Button_save
+            // Button_Memory
             // 
-            this.Button_save.Location = new System.Drawing.Point(12, 187);
-            this.Button_save.Name = "Button_save";
-            this.Button_save.Size = new System.Drawing.Size(171, 23);
-            this.Button_save.TabIndex = 21;
-            this.Button_save.Text = "HISTORY";
-            this.Button_save.UseVisualStyleBackColor = true;
+            this.Button_Memory.Location = new System.Drawing.Point(12, 187);
+            this.Button_Memory.Name = "Button_Memory";
+            this.Button_Memory.Size = new System.Drawing.Size(171, 23);
+            this.Button_Memory.TabIndex = 21;
+            this.Button_Memory.Text = "MEMORY";
+            this.Button_Memory.UseVisualStyleBackColor = true;
+            this.Button_Memory.Click += new System.EventHandler(this.Button_Memory_Click);
             // 
             // Form1
             // 
@@ -285,7 +286,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(290, 214);
-            this.Controls.Add(this.Button_save);
+            this.Controls.Add(this.Button_Memory);
             this.Controls.Add(this.Button_clear);
             this.Controls.Add(this.Button_back);
             this.Controls.Add(this.Button_Div);
@@ -339,7 +340,7 @@
         private System.Windows.Forms.Button Button_Div;
         private System.Windows.Forms.Button Button_back;
         private System.Windows.Forms.Button Button_clear;
-        private System.Windows.Forms.Button Button_save;
+        private System.Windows.Forms.Button Button_Memory;
     }
 }
 

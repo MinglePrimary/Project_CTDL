@@ -16,7 +16,8 @@ namespace Project_InfixCalculator
         {
             InitializeComponent();
         }
-
+        // Bien memory
+        public static String Memory;
         
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -127,6 +128,12 @@ namespace Project_InfixCalculator
             string Temp = TextBox.Text;
             int result = EvaluateInfixExpressionClass.evaluate(Temp);
             TextBox.Text = result.ToString();
+            Memory = TextBox.Text;
+        }
+
+        private void Button_Memory_Click(object sender, EventArgs e)
+        {
+            TextBox.Text = Memory;
         }
     }
 }
